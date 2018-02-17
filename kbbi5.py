@@ -27,6 +27,7 @@ if hasil1 is None:
     hasil2 = name_box1.text.strip()
     print('')
     print(hasil2)
+    print('')
 #if hasil2 is not None:
 #    hasil2 = name_box1.text.strip()
 #    print(hasil2)
@@ -34,6 +35,7 @@ if hasil2 is None:
     hasil1 = name_box.text.strip()
     print('')
     print(hasil1)
+    print('')
 if hasil1 and hasil2 is not None:
     hasil1 = name_box.text.strip()
     hasil2 = name_box1.text.strip()
@@ -41,3 +43,4 @@ if hasil1 and hasil2 is not None:
     print(hasil1)
     print('')
     print(hasil2)
+    print('')
