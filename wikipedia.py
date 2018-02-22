@@ -13,7 +13,7 @@ arg_parser.add_argument("-k",
                         help="Kata yang ingin dicari")
 args = arg_parser.parse_args()
 
-tautan = 'https://id.wikipedia.org/wiki/' + args.kata
+tautan = 'https://id.m.wikipedia.org/wiki/' + args.kata
 halaman = urlopen(tautan)
 soup = BeautifulSoup(halaman, 'html.parser')
 thesaurus = soup.find( 'div', attrs={ 'class' : 'mw-parser-output' })
