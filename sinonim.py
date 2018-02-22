@@ -17,7 +17,14 @@ tautan = 'http://m.persamaankata.com/search.php?q=' + args.kata
 halaman = urlopen(tautan)
 soup = BeautifulSoup(halaman, 'html.parser')
 thesaurus = soup.find( 'div', attrs={ 'class' : 'thesaurus_group' })
-hasil = thesaurus.text.strip()
+for nama in thesaurus:
+    nama = thesaurus.find('h3')
+    hasil_nama = nama.text.strip()
+for hasil in thesaurus:
+    hasil = thesaurus.find('ul')
+    hasil_hasil = hasil.text.strip()
 print('')
-print(hasil)
+print(hasil_nama)
+print('')
+print(hasil_hasil)
 print('')
